@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+body {
+  font-family: Nunito,Avenir,Helvetica,"sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  word-wrap: break-word;
+  font-feature-settings: "kern","liga","clig","calt";
+  color:rgba(0,0,0,.8)
+}
+#name_header {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  color:rgba(0,0,0,.8)
+}
+#job_header {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color:rgba(0,0,0,.8)
+}
+h1, h2 {
+  padding: 0;
+  margin: 0 0 1.45rem;
+  color: inherit;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
