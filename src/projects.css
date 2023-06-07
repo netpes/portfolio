@@ -13,7 +13,13 @@
     color: black;
     /*box-shadow:5px 10px #888888;*/
 }
+#main {
+    /*background-image: url("wordcloud.png");*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
 
+}
 .description {
     color: black;
     padding: 10px;
@@ -40,50 +46,6 @@
     position: absolute;
     right:0;
     margin:30px
-}
-.piano {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    width: 100vw;
-    perspective: 1000px;
-}
-
-.white-key {
-    width: calc(100vw / 6);
-    height: 200px;
-    background-color: white;
-    border: 1px solid #999;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-right: 2px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.white-key:hover {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-3px) rotateX(-10deg);
-}
-
-.black-key {
-    width: calc(100vw / 6);
-    height: 140px;
-    color:white;
-    background-color: black;
-    border-radius: 0 0 5px 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    margin-right: 2px;
-    margin-left: -15px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.black-key:hover {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    transform: translateY(-3px) rotateX(-10deg);
 }
 
 /*.project {*/

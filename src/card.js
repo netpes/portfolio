@@ -1,7 +1,7 @@
 
 import "./projects.css"
 import {useState} from "react";
-export default function MediaControlCard({title, description, imageUrl, link, setdescription, setImage}) {
+export default function MediaControlCard({title, description, imageUrl, liveLink, setdescription, setImage}) {
 
     const [showDescription, setShowDescription] = useState(false);
 
@@ -15,14 +15,19 @@ export default function MediaControlCard({title, description, imageUrl, link, se
             // setImage(null);
     };
 
+    // const Sub = (liveLink) =>  window.open(liveLink);
+
+
+
     return (
         <>
             <div
                 className="project"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
+                // onClick={()=>Sub(liveLink)}
             >
-                <a href={link}>{title}</a>
+                <a href={liveLink}>{title}</a>
             </div>
 
         </>
