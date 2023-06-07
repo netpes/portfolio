@@ -3,8 +3,8 @@ import gifImage from './down.gif';
 
 const Arrow = () => {
     return (
-        <div className={"absolute bottom-0 z-negative-one"}>
-            <img className={"w-[6em] z-negative-one"} src={gifImage} alt="Saved GIF" />
+        <div className={" z-negative-one flex flex-col justify-center items-center"}>
+            <img className={" absolute bottom-0 w-[6em] z-negative-one"} src={gifImage} alt="Saved GIF" />
         </div>
     );
 };

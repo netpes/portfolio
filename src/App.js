@@ -8,19 +8,27 @@ import About from "./About";
 import Projects from "./projects";
 import ContactMe from "./contact";
 
+import React from 'react';
+
+
 
 function App() {
+
+    // const containerRef = useRef(null)
   return (
-    <div className="App  flex flex-col justify-center items-center ">
-      <Navbar/>
+      <>
+          <Navbar/>
 
     <Main/>
         <Arrow/>
+
       <About/>
         <Projects/>
         <ContactMe/>
 
-    </div>
+     </>
+
+
   );
 }
 

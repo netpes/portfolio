@@ -1,12 +1,7 @@
-import React, {useState} from "react";
-import MediaControlCard from "./card";
-import {Container} from "@mui/material";
+import React from "react";
+import ProjectCard from "./ProjectCard";
 
-
-
-const Projects = () => {
-    const [description, setDescription] = useState()
-    const [image, setImage] = useState()
+const ProjectList = () => {
     const projects = [
         {
             title: "Assistor",
@@ -44,31 +39,19 @@ const Projects = () => {
             liveLink:"https://netpes.net/math_garden/"
         },
     ];
-
     return (
-        <section
-            id="projects"
-            className="flex flex-col justify-center items-center h-[100vh] font-nunito font-avenir font-helvetica font-sans text-black text-opacity-70"
-        >
-            <header>
-                <h1 className="text-5xl font-bold">Projects</h1>
-                <hr />
-            </header>
-            <div className="flex mt-10 flex-col justify-center items-center text-1.5xl w-[80vw]">
+        <div className="py-8 flex flex-col justify-center items-center h-[100vh] font-nunito font-avenir font-helvetica font-sans text-black text-opacity-70">
+            <h2 className="text-5xl font-bold">Projects</h2>
+            <hr/>
+            <div className="grid gap-6 grid-cols-2" >
                 {projects.map((project, index) => (
-                    <MediaControlCard key={index} {...project} setdescription={setDescription} setImage={setImage} />
-
+                    <div key={index} className="w-[40vw]">
+                        <ProjectCard {...project} />
+                    </div>
                 ))}
-
-
-                {/*<div className="description">*/}
-                {/*    <img src={image} className={"image"}/>*/}
-                {/*    <p className={"descriptionText"}> {description} </p>*/}
-                {/*</div>*/}
-
-            </div>
-        </section>
+        </div>
+        </div>
     );
 };
 
-export default Projects;
+export default ProjectList;

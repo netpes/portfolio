@@ -7,7 +7,7 @@ const ContactMe = () => {
     const aStyle = "p-4 m-4 mt-8";
 
     return (
-        <section id={"#contact"} className="flex flex-col justify-center items-center h-[100vh]">
+        <section id={"contact"} className="flex flex-col justify-center items-center h-[100vh]">
             <header className="text-6xl font-nunito font-avenir font-helvetica font-sans text-black text-opacity-70">
             <h1 >Contact Me</h1>
             <hr/>

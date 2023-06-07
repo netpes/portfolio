@@ -18,6 +18,44 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+<!--  <script>-->
+<!--    window.addEventListener('wheel', handleScroll);-->
+
+<!--    function handleScroll(event) {-->
+<!--      // event.preventDefault();-->
+
+<!--      const delta = event.deltaY;-->
+<!--      const windowHeight = window.innerHeight;-->
+
+<!--      // Calculate the distance to scroll based on the window height-->
+<!--      const scrollDistance = delta > 0 ? windowHeight : -windowHeight;-->
+
+<!--      // Scroll the page by the calculated distance-->
+<!--      window.scrollBy({-->
+<!--        top: scrollDistance,-->
+<!--        left: 0,-->
+<!--        behavior: 'smooth'-->
+<!--      });-->
+<!--    }-->
+<!--    document.querySelectorAll('a[href^="#"]').forEach(anchor => {-->
+<!--      anchor.addEventListener('click', function (e) {-->
+<!--        e.preventDefault();-->
+
+<!--        document.querySelector(this.getAttribute('href')).scrollIntoView({-->
+<!--          behavior: 'smooth'-->
+<!--        });-->
+<!--      });-->
+<!--    });-->
+
+<!--    // jQuery (if you're using jQuery)-->
+<!--    $('a[href^="#"]').on('click', function (event) {-->
+<!--      event.preventDefault();-->
+
+<!--      $('html, body').animate({-->
+<!--        scrollTop: $($.attr(this, 'href')).offset().top-->
+<!--      }, 1000);-->
+<!--    })-->
+<!--  </script>-->
 
   </body>
 </html>

@@ -9,6 +9,10 @@ body {
   word-wrap: break-word;
   font-feature-settings: "kern","liga","clig","calt";
   color:rgba(0,0,0,.8)
+
+}
+html {
+  scroll-behavior: smooth;
 }
 #name_header {
   font-size: 3.5rem;
